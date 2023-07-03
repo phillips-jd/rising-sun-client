@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const http = axios.create({
-    baseURL: "http://localhost:9000"
-  });
+  baseURL: "https://phillips-jd.github.io/rising-sun-client",
+});
   
   export default {
       getPendingApplications() {
