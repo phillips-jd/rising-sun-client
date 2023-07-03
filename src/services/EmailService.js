@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const http = axios.create({
-  baseURL: "https://phillips-jd.github.io/rising-sun-client",
+  baseURL: "https://rising-sun-java-server-production.up.railway.app",
 });
 
 export default {
