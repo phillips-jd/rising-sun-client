@@ -26,7 +26,7 @@ export default {
   align-items: center;
   background-image: url('../images/shelterbanner3.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-clip: content-box;
 }
 
@@ -36,21 +36,33 @@ img {
 
 
 .headCenter {
-    grid-area: headCenter;
-    flex-direction: column;
-    width: 50vw;
-    justify-items: center;
-    margin-top: -5vh;
-    margin-left: -20vw;
-    font-size: 50px;
-    color: antiquewhite;
-    text-shadow: -1px -1px 0 #dc9d4e, 1px -1px 0 #dc9d4e, -1px 1px 0 #dc9d4e, 1px 1px 0 #898686;
-
-}
-
-.router-link {
-  padding: 3px;
-  cursor: pointer;
+  flex-direction: column;
+  width: 50%;
+  justify-items: center;
+  color: antiquewhite;
+  text-shadow: -1px -1px 0 #dc9d4e, 1px -1px 0 #dc9d4e, -1px 1px 0 #dc9d4e, 1px 1px 0 #898686;
+  
+  @media (min-width: 993px) {
+    margin-top: -5%;
+    margin-left: -35%;
+    font-size: 30px;
+  }
+  @media (max-width: 992px) {
+    margin-top: -6%;
+    margin-left: -35%;
+    font-size: 20px;
+  }
+  @media (max-width: 768px) {
+    margin-top: -7%;
+    margin-left: -49%;
+    font-size: 13px;
+  }
+  
+  /* @media (min-width: 1200px) {
+    margin-top: -3%;
+    margin-left: -25%;
+    font-size: 30px;
+  } */
 }
 
 </style>

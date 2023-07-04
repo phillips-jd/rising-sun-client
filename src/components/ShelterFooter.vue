@@ -62,16 +62,21 @@ div {
 }
 
 #wholeFooter {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   background-color: #3a4143;
   border: 3px solid #a36c2c;
   justify-content: center;
   bottom: 0; 
+  @media (max-width: 992px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 993px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 #shelter-location-info {
-  width: 450px;
   height: 100%;
   text-align: center;
   color: antiquewhite;
